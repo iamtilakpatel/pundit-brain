@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# SPDX-FileCopyrightText: Copyright (C) 2026 iamankushpandit <https://github.com/iamankushpandit>
+
+# SPDX-FileCopyrightText: Copyright (C) 2026 Tilak Patel <https://github.com/iamtilakpatel>
+
+# Originally part of Ivy AI -- <https://github.com/iamankushpandit/esp_ai>
+
+# Modified for Pundit Brain -- <https://github.com/iamtilakpatel/pundit-brain>
+
+# Free software under GPL-3.0-or-later, with the Espressif SDK linking
+
+# exception in LICENSE.exception
+
+# See LICENSE, LICENSE.exception, NOTICE.md and THIRD_PARTY.md
+
+menu "Target board"
+
+choice BOARD_TARGET
+    prompt "Board"
+    depends on IDF_TARGET_ESP32S3
+    default BOARD_FREENOVE_FNK0104B
+
+config BOARD_FREENOVE_FNK0104B
+    bool "Freenove FNK0104B"
+
+config BOARD_WAVESHARE_AMOLED_2_16
+    bool "Waveshare ESP32-S3-Touch-AMOLED-2.16"
+    help
+        Minimal startup diagnostics only. All board peripherals and the
+        application pipeline remain uninitialized until hardware bring-up.
+
+endchoice
+
+endmenu
