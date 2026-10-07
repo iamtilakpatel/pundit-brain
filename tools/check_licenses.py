@@ -65,10 +65,10 @@ import xml.etree.ElementTree as ElementTree
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-HOLDER = "iamankushpandit"
+HOLDER = "iamtilakpatel"
 YEAR = "2026"
-PROJECT = "Ivy AI"
-REPO = "https://github.com/iamankushpandit/esp_ai"
+PROJECT = "Pundit Brain"
+REPO = "https://github.com/iamtilakpatel/pundit-brain"
 
 # The notice, as plain lines, rendered into whichever comment syntax the file
 # speaks. An empty string is a blank comment line.
